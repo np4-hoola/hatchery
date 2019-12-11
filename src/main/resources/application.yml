@@ -1,0 +1,37 @@
+server:
+  port: 33333
+spring:
+  profiles:
+    active: local
+---
+spring:
+  output:
+    ansi:
+      enabled: always
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        format_sql: ture
+        ddl-auto: none
+---
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/dsp?serverTimezone=UTC&useSSL=false
+    username: root
+    password: k90e92
+    driver-class-name: com.mysql.cj.jdbc.Driver
+---
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/dsp?serverTimezone=UTC&useSSL=false
+    username: root
+    password: k90e92
+    driver-class-name: com.mysql.cj.jdbc.Driver
