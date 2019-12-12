@@ -6,6 +6,8 @@ import com.np4hoola.hatchery.service.ZoneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class ZoneServiceImpl implements ZoneService {
 
@@ -13,7 +15,11 @@ public class ZoneServiceImpl implements ZoneService {
     private ZoneRepository zoneRepository;
 
     public Zone getZoneInfo(int zid) {
-        Zone zone = zoneRepository.getOne(zid);
-        return zone;
+        Optional<Zone> maybeZone = zoneRepository.findById(zid);
+        if (maybeZone.isPresent()) {
+            return maybeZone.get();
+        } else {
+            return null;
+        }
     }
 }
