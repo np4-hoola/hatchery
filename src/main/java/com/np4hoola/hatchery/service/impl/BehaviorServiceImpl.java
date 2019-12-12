@@ -11,7 +11,7 @@ public class BehaviorServiceImpl implements BehaviorService {
     @Override
     public String makeUid(int rt, String ref) {
         //TODO 실제 UID를 만드는 로직이 필요
-        return "abcdefghijklmnopqrstuvwxyz012345678901abcdefghijklmnopqrstuvwxyz";
+        return "abcdefghijklmnopqrstuvwxyz01211345678901abcdefghijklmnopqrstuvwxyz";
     }
 
     @Override
