@@ -1,8 +1,10 @@
 package com.np4hoola.hatchery.form;
 
 import lombok.Builder;
+import lombok.Getter;
 
 @Builder
+@Getter
 public class Banner {
     private int type; //배너 타입
     private String url; //랜딩 URL
