@@ -15,13 +15,6 @@ jobs:
         java-version: 1.8
     - name: Build with Gradle
       run: ./gradlew build
-#    - name: Generate coverage report
-#      run: bash <(curl -s https://codecov.io/bash)
     - uses: codecov/codecov-action@v1
       with:
         token: ${{ secrets.CODECOV_TOKEN }} #required
-#        file: ./coverage.xml #optional
-#        flags: unittests #optional
-#        name: codecov-umbrella #optional
-#        yml: ./codecov.yml #optional
-#        fail_ci_if_error: true #optional (default = false)
