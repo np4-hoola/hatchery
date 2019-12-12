@@ -15,7 +15,7 @@ public class Zone {
     @Column(name = "width", nullable = false, columnDefinition = "unsigned int(4)")
     private int width;
 
-    @Column(name = "width", nullable = false, columnDefinition = "unsigned int(4)")
+    @Column(name = "height", nullable = false, columnDefinition = "unsigned int(4)")
     private int height;
 
     @Column(name = "device", nullable = false, columnDefinition = "varchar(1)")
