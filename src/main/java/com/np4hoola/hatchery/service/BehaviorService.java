@@ -5,5 +5,5 @@ import com.np4hoola.hatchery.form.Behavior;
 
 public interface BehaviorService {
     String makeUid(int rt, String ref);
-    Behavior getBehavior(Zone zone, int rt, String ref, String uid);
+    Behavior getBehavior(Zone zone, int rt, String ref, String uid, boolean newbie);
 }
