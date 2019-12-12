@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/np4-hoola/hatchery/branch/master/graph/badge.svg)](https://codecov.io/gh/np4-hoola/hatchery)
+
 ## Synopsis
 
 * hatchery 는 지면에서 온 Request를 받아 적절한 광고를 내보내기까지 전체 Production의 Controller 역할을 수행하는 서비스이다
