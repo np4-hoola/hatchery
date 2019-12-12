@@ -1,3 +1,4 @@
+[![github](https://github.com/np4-hoola/hatchery/workflows/Java%20CI/badge.svg)](https://github.com/np4-hoola/hatchery/actions?query=workflow%3A%22Java+CI%22)
 [![codecov](https://codecov.io/gh/np4-hoola/hatchery/branch/master/graph/badge.svg)](https://codecov.io/gh/np4-hoola/hatchery)
 
 ## Synopsis
